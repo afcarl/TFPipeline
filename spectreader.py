@@ -4,10 +4,10 @@ import tensorflow as tf
 #Now, we can define a function which instructs TensorFlow how to read the data:
 
 # Function to tell TensorFlow how to read a single image from input file
-def getImage(filename, nepochs):
+def getImage(filenames, nepochs):
     # convert filenames to a queue for an input pipeline.
-    print('getImage ' + filename)
-    filenameQ = tf.train.string_input_producer([filename],num_epochs=nepochs)
+    print('getImage ' + str(filenames))
+    filenameQ = tf.train.string_input_producer(filenames,num_epochs=nepochs)
  
     # object to read records
     recordReader = tf.TFRecordReader()
