@@ -1,5 +1,7 @@
 */._*
-*validate-*
-*train-*
 .ipynb_checkpoints/*
 .ipynb_checkpoints
+data/validation-*
+data/train-*
+*validation-*
+*train-*
